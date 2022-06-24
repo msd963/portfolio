@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .grid-container{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-gap:3px;
+
+
+        }
+        .grid-container > div{padding:5px;background-color: rgb(165, 117, 197);border: 1px solid red;}
+        .div1{grid-column: 1 / -1;}
+        .div2{grid-column: 1 / span 2;}
+        .div3{grid-column: 3 / -1 ;}
+        .div4{grid-column: 1 / -1;}
+        @media screen and (max-width:520px){
+            .div3{grid-column: 1 / -1 ;}
+            .div2{grid-column: 2 /  4;}
+        }
+        @media screen and (max-width:220px){
+            .div2{grid-column: 1 /  -1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="div1"><p>Header</p> </div>
+        <div class="div2">Saidbar</div>
+        <div class="div3">Content</div>
+        <div class="div4">Footer</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ista img</title>
+    <style> 
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-rows: ;
+            grid-auto-flow: dense;
+           
+
+        }
+        .container > div img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .big{
+            grid-column: span 2;
+        }
+        .sml{
+            grid-row: span 2;
+        }
+        .mid{grid-column: span 2;}
+        .stnd{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="di1 big"><img src="img/image1.jpg" alt=""></div>
+        <div class="di2 sml"><img src="img/image2.jpg" alt=""></div>
+        <div class="di3 mid"><img src="img/image3.jpg" alt=""></div>
+        <div class="di4 stnd"><img src="img/image4.jpg" alt=""></div>
+        <div class="di5 mid"><img src="img/image5.jpg" alt=""></div>
+        <div class="di6 big"><img src="img/image6.jpg" alt=""></div>
+        <div class="di7 sml"><img src="img/image7.jpg" alt=""></div>
+        <div class="di8 stnd"><img src="img/image8.jpg" alt=""></div>
+        <div class="di9 big"><img src="img/image9.jpg" alt=""></div>
+        <div class="di10 sml"><img src="img/image10.jpg" alt=""></div>
+        <div class="di11 big"><img src="img/image11.jpg" alt=""></div>
+        <div class="di12 sml"><img src="img/image12.jpg" alt=""></div>
+        <div class="di13 big"><img src="img/image13.jpg" alt=""></div>
+        <div class="di14 mid"><img src="img/image14.jpg" alt=""></div>
+        <div class="di15 stnd"><img src="img/image15.jpg" alt=""></div>
+        <div class="di16 sml"><img src="img/image16.jpg" alt=""></div>
+    </div>
+</body>
+</html>

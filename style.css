@@ -1,0 +1,82 @@
+
+body{margin:0; padding:0;background-color:tomato;}
+p{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  text-shadow: -2px 8px 7px rgba(225,28,36,1);
+  font-size:22px; 
+  font-weight:bold;
+}
+label{
+ display: inline-block;
+    margin: 0px 41%;
+    justify-content: center;
+    text-align: center;
+}
+.copy-btn{
+  float:right;
+}
+
+
+button{
+   display:block;
+   margin:0 auto;
+}
+
+.toast-massage{
+  position:fixed;
+  top: 2rem;
+  right: 2rem;
+  background-color:green;
+  padding:5px;
+  border-radius:5px;
+  color:#ffff;
+  box-shadow: -20px 7px 19px 0px rgba(176,37,120,0.73);
+-webkit-box-shadow: -20px 7px 19px 0px rgba(176,37,120,0.73);
+-moz-box-shadow: -20px 7px 19px 0px rgba(176,37,120,0.73);
+}
+
+.toast-massage-slide-in{
+  animition:toast-animition-in 0.5s ease-in;
+}
+.toast-massage-slide-out{
+  animition:toast-animition-in 0.5s ease-in;
+}
+
+
+@keyframes toast-animition-in{
+  form{
+     transform:translateX(200px);
+     opacity:0;
+  }
+  to{
+     transform:translateX(0px);
+     opacity:1;
+  }
+}
+@keyframes toast-animition-otu{
+   form{
+     transform:translateX(0px);
+     opacity:1;
+  }
+  to{
+     transform:translateX(200px);
+     opacity:0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

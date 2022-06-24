@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+        .grid-container > div{
+            padding: 20px;
+        }
+        .content{
+            grid-column: span 2;
+            background-color: blanchedalmond;
+            grid-row: span 4;
+        }
+        .minmodule{
+            grid-column: span 3;
+            background-color: rgb(85, 69, 44);
+            grid-row: span 6;
+        }
+        .extrclmn{
+            grid-column: span 1;
+            background-color: rgb(63, 104, 24);
+            grid-row: span 6;
+        }
+        .sidmodule{
+            grid-column: span 2;
+            background-color: rgb(99, 101, 189);
+            grid-row: span 2;
+        }
+        .footer{
+            grid-column: span 6;
+            background-color: rgb(136, 73, 138);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="content">Content</div>
+        <div class="minmodule">Main Module</div>
+        <div class="extrclmn">Extara colmn</div>
+        <div class="sidmodule">Side Module</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
